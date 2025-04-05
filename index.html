@@ -1,0 +1,106 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Futcore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">Futcore</div>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="partidos.html">Partidos</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+            <li><a href="cuenta.html">Cuenta</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de partidos destacados -->
+    <section class="destacados">
+        <h1>Partidos Destacados</h1>
+        <div id="partidos-container">Cargando partidos...</div>
+    </section>
+  <button id="agregarPartidos">+ Agregar Partidos </button>
+
+    <!-- Sección de noticias -->
+    <section class="noticias">
+        <h1>Últimas Noticias</h1>
+        <div id="noticias -  container">Cargando noticias...</div>
+    </section>
+<button id="agregarNoticia">+ Agregar Noticia</button>
+  
+    <!-- Sección de eventos y novedades -->
+    <section class="novedades">
+        <h1>Eventos y Novedades</h1>
+        <div id="novedades-container">Cargando novedades...</div>
+    </section>
+   <button id="agregarNovedades">+ Agregar Novedades </button>
+
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos - Microsoft Futcore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="partidos">
+        <h1>Partidos por Competencia</h1>
+        <div id="liga-easports" class="competencia">
+            <h2>Liga EA SPORTS</h2>
+            <div class="partidos-container"></div>
+        </div>
+        <div id="champions-league" class="competencia">
+            <h2>UEFA Champions League</h2>
+            <div class="partidos-container"></div>
+        </div>
+        <div id="nations-league" class="competencia">
+            <h2>UEFA Nations League</h2>
+            <div class="partidos-container"></div>
+        </div>
+        <div id="eliminatorias" class="competencia">
+            <h2>Eliminatorias Copa del Mundo</h2>
+            <div class="partidos-container"></div>
+        </div>
+        <div id="fc25-global" class="competencia">
+            <h2>FC25 Global Series</h2>
+            <div class="partidos-container"></div>
+        </div>
+    </section>
+
+    <script src="partidos.js"></script>
+</body>
+</html>
+
+  <div class="chat-header">
+    <h2>Chat de Narración</h2>
+    <button id="toggleBots">Desactivar Bots</button>
+</div>
+
+<div id="chat" class="chat-box"></div>
+
+<div class="chat-input">
+    <input type="text" id="userMessage" placeholder="Escribe un mensaje..." disabled />
+    <button id="sendMessage" disabled>Enviar</button>
+</div>
+
+<div id="seccionCuenta" class="seccion" style="display: none;">
+  <div class="auth-container">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="loginUser" placeholder="Usuario">
+    <input type="password" id="loginPass" placeholder="Contraseña">
+    <button onclick="login()">Entrar</button>
+
+    <h2>Registrarse</h2>
+    <input type="text" id="registerUser" placeholder="Nuevo Usuario">
+    <input type="password" id="registerPass" placeholder="Nueva Contraseña">
+    <button onclick="register()">Registrar</button>
+
+    <div id="authMessage"></div>
+  </div>
+</div>
+
+  <a href="#" id="btnCuenta" class="menu-link">Cuenta</a>
